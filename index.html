@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>التحكم بذراع الروبوت</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container" style="text-align: center">
+            
+            <h1>التحكم بذراع الروبوت</h1>
+            <div class="app"> 
+                <div class="input-single">
+                    <textarea id="textarea" cols="100" rows="6"></textarea>
+                </div>
+                <button id="pause-record-btn" title="ايقاف" style="border-color:red">ايقاف التعرف على الصوت</button>
+                <button id="start-record-btn" title="تشغيل" style="border-color:green">تشغيل التعرف على الصوت</button>
+                <button title="اتصال بالاردوينو" onclick="onConnectUsb()" id="connect-usb">اتصال بالاردوينو</button>
+                <br><br>
+                <button id="clear-btn" title="مسح">أضغط هنا لمسح النص</button>                
+                <p id="recording-instructions">أضغط تشغيل وأسمح باستخدام المايكروفون</p>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script src="arduino.js"></script>
+    </body>
+</html>
